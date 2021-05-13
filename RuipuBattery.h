@@ -27,6 +27,7 @@ public:
   uint8_t soc();
   uint8_t maxTemp();
   uint8_t minTemp();
+  uint8_t cycle();
 
   float voltage();
   float current();
