@@ -129,6 +129,11 @@ float RuipuBattery::high()
   return rawHigh() / 1000.0;
 }
 
+uint8_t RuipuBattery::cycle()
+{
+  return _buf[12] << 8 | _buf[11];
+}
+
 uint8_t RuipuBattery::maxTemp()
 {
   uint8_t maxTemp = 0;
